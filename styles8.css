@@ -25,6 +25,8 @@ a {color: white; text-decoration: none;}
 
 .img-container {display: flex; flex-wrap: wrap; justify-content: center; width: 100%;}
 
+.container-greeting {text-align: center; margin: 40px;}
+
 @media (max-width: 768px) {
     .column {flex: 100%;}
     .nav-links {display: none;}
