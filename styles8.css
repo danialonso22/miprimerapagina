@@ -1,0 +1,55 @@
+*{margin: 0; padding: 0; text-decoration: none; border: none; outline: none;}
+
+body{background-color:slategray; color:black}
+h1{color: rgb(39, 11, 58); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 40px; text-align: center;}
+section{margin-left: 40px; padding: 30px 30px 20px 60px;}
+p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 18px; padding: 10px; margin: 20px;}
+#mi-id{background-color: rgb(55, 161, 121); color:black; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ; font-size: 26px;}
+.mi-clase{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px ;border: 1px solid black; padding: 10px; margin: 20px 20px 0px 0px;}
+section article{background-color: rgb(223, 156, 134); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; width: 360px; height: 700px;}
+.box{background-color: lightcoral; width: 200px; height: 350px; padding: 20px; border: 3px solid blueviolet; margin: 50px;}
+.firma{background-color: black; color: white; font-size: 12px; width: 550px; height: 80px; padding: 10px; border: 1px solid black; margin: 10px;}
+.container{max-width: 800px; margin: auto; padding: 20px;}
+.row{display:flex; flex-wrap: wrap; margin: 10px;}
+.column{flex: 1; padding: 10px;}
+@media (max-width: 600px) {.column {flex: 100%;}}
+
+.container-nav {display: flex; padding: 10px; height: 50px; background-color: black;}
+.navbar {display: flex; justify-content: space-between; width: 100%;}
+.brand {display: flex; align-items: center;}
+li>a {padding: 8px 24px;}
+li {list-style-type: none;}
+a {color: white; text-decoration: none;}
+.nav-links {display: flex; align-items: center;}
+.button-menu-toggle {display: none;}
+
+.img-container {display: flex; flex-wrap: wrap; justify-content: center; width: 100%;}
+
+@media (max-width: 768px) {
+    .column {flex: 100%;}
+    .nav-links {display: none;}
+    .button-menu-toggle {
+        display: block; 
+        background-color: white; 
+        border: none; 
+        border-radius: 50px; 
+        padding: 0 24px; 
+        font-family: monospace; 
+        font-weight: bold; 
+        font-size: 20px;}
+    .nav-links.nav-links-responsive {
+        position: absolute; 
+        display: flex; 
+        background-color: rgba(20,20,20,0.95); 
+        width: 100%; 
+        height: 100%; 
+        top: 70px; 
+        left: 0; 
+        flex-direction: column; 
+        padding-top: 200px; 
+        align-items: center; 
+        gap: 70px; 
+        font-size: 40px;}
+}
+
+.img-container {flex-direction: row;}
